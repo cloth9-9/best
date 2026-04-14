@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nabin Tailor | Premium</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Loader -->
+<div id="loader">Loading Premium Experience...</div>
+
+<!-- Header -->
+<header>
+  <div class="logo">Nabin Tailor</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#products">Products</a>
+    <a href="#custom">Tailoring</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button onclick="toggleTheme()">🎨</button>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <h1>Luxury Clothing Experience</h1>
+  <p>Design • Customize • Order</p>
+  <button class="btn">Explore</button>
+</section>
+
+<!-- Categories -->
+<section id="shop">
+  <h2>Collections</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="men.jpg" alt="Men">
+      <p>Men</p>
+    </div>
+
+    <div class="card">
+      <img src="women.jpg" alt="Women">
+      <p>Women</p>
+    </div>
+
+    <div class="card">
+      <img src="kids.jpg" alt="Kids">
+      <p>Kids</p>
+    </div>
+
+    <div class="card">
+      <img src="accessories.jpg" alt="Accessories">
+      <p>Accessories</p>
+    </div>
+  </div>
+</section>
+
+<!-- Products -->
+<section id="products">
+  <h2>Featured Products</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="men.jpg" alt="Product">
+      <p>Formal Shirt</p>
+      <button class="btn" onclick="orderNow('Formal Shirt')">Order</button>
+    </div>
+
+    <div class="card">
+      <img src="women.jpg" alt="Product">
+      <p>Designer Dress</p>
+      <button class="btn" onclick="orderNow('Designer Dress')">Order</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Tailoring Form -->
+<section id="custom">
+  <h2>Custom Tailoring</h2>
+
+  <form onsubmit="sendOrder(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="text" placeholder="Your Size">
+    <textarea placeholder="Describe your design"></textarea>
+
+    <button class="btn">Submit</button>
+  </form>
+</section>
+
+<!-- Popup -->
+<div id="popup">
+  <div class="popup-box">
+    <span onclick="closePopup()">✖</span>
+    <h3>Give Google Review & Win Rewards</h3>
+
+    <a href="https://maps.app.goo.gl/CnbQB4gEnnmwvQCN8" target="_blank" class="btn">
+      Give Review
+    </a>
+
+    <button class="btn" onclick="reviewDone()">I Gave Review</button>
+  </div>
+</div>
+
+<!-- Google Map -->
+<section>
+  <iframe 
+    src="https://maps.google.com/maps?q=Nabin%20Poria%20Tailor%20Shop&output=embed">
+  </iframe>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📞 +918001223331</p>
+
+  <a href="tel:+918001223331" class="btn">Call Now</a>
+  <a href="https://wa.me/918001223331" class="btn">WhatsApp</a>
+</section>
+
+<!-- Floating Button -->
+<a href="https://wa.me/918001223331" class="floating">💬</a>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Nabin Tailor</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
